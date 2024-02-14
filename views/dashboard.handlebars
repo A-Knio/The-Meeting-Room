@@ -1,0 +1,17 @@
+<!-- Loop over each object in the posts array -->
+{{#each posts as |post|}}
+<div class="dash">
+  <div class="dash-mb">
+    <a href="/post/{{post.id}}">
+      <h3>{{post.title}}</h3>
+    </a>
+    <p>Course: {{post.course_name}}</p>
+    <p>Due Date: {{format_date post.due_date}}</p>
+    <p>Priority: {{capitalize post.priority}}</p>
+    <p>Status: {{capitalize post.status}}</p>
+    <h5>Posted: {{format_date post.date_created}}</h5>
+  </div>
+</div>
+{{/each}}
+
+<button class="btn"><a href="/newpost" class="btn-project">New Project</a></button>

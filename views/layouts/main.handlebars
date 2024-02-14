@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>SPO</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+  <div class="header">
+    <div class="top-nav">
+      <ul>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+          <li><a href="/" class="button">Home</a><li>
+          <li><a href="/dashboard" class="button">Dashboard</a></li>
+          <li><a id="logout" class="button">Logout</a></li>
+        {{else}}
+          <li><a href="/login" class="button">Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+    <div class="side-nav">
+      <a href="/" class="logo-link"><img src="images/Logo2.png" alt="logo"></a>
+    </div>
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+</body>
+    <footer>
+      
+    </footer>
+    {{!-- <div id="container">
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+        <div class="particales"></div>
+      </div> --}}
+  </div>
+    <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js" class="button"></script>
+  {{/if}}
+
+</html>
