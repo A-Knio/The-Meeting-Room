@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 </head>
 <body>
   <div class="header">
-    <div class="top-nav">
+    <nav class="top-nav mx-6 column is-half-mobile ">
       <ul>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
@@ -23,7 +24,7 @@
           <li><a href="/login" class="button">Login</a></li>
         {{/if}}
       </ul>
-    </div>
+    </nav>
     <div class="side-nav">
       <a href="/" class="logo-link"><img src="images/Logo2.png" alt="logo"></a>
     </div>

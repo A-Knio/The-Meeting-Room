@@ -1,17 +1,24 @@
+
+
 <!-- Loop over each object in the posts array -->
 {{#each posts as |post|}}
-<div class="dash">
-  <div class="dash-mb">
-    <a href="/post/{{post.id}}">
-      <h3>{{post.title}}</h3>
-    </a>
-    <p>Course: {{post.course_name}}</p>
-    <p>Due Date: {{format_date post.due_date}}</p>
-    <p>Priority: {{capitalize post.priority}}</p>
-    <p>Status: {{capitalize post.status}}</p>
-    <h5>Posted: {{format_date post.date_created}}</h5>
+<div class="column is-three-quarters-mobile mx-4">
+  <div class="column">
+    <div class="box">
+      <a href="/post/{{post.id}}">
+      <h3 class="is-size-1 has-text-black-bis is-capitalized" >{{post.title}}</h3>
+      </a>
+      <div class="content">
+          <p class=" has-text-black-bis"><b>COURSE:</b> {{post.course_name}}</p>
+          <p class="has-text-black-bis"><b>DUE DATE:</b> {{format_date post.due_date}}</p>
+          <p class="has-text-black-bis"><b>PRIORITY:</b> {{capitalize post.priority}}</p>
+          <p class="has-text-black-bis"><b>STATUS:</b> {{capitalize post.status}}</p>
+          <h5 class="has-text-black-bis"><b>POSTED:</b> {{format_date post.date_created}}</h5>
+      </div>
+    </div>
   </div>
 </div>
 {{/each}}
+
 
 <button class="btn"><a href="/newpost" class="btn-project">New Project</a></button>
