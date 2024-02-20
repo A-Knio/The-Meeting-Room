@@ -1,6 +1,7 @@
 # The-Meeting-Room
 This is a website for you and your group to interact/achieve tasks and roles.
 
+## User Story 
 The Meeting Room is a comprehensive tool designed to help students manage their academic projects with efficiency and ease. This application offers functionalities to assign tasks, set deadlines, track progress, and much more, ensuring students stay organized and ahead in their academic journey.
 
 ## Table of Contents
