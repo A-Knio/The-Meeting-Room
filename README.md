@@ -56,5 +56,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Deployment
 
-This application is deployed on Heroku.[Click here](https://student-project-organizer-f32e9a6cf079.herokuapp.com/) to view the project on Heroku.
+This application is deployed on Heroku.[Click here](https://the-meeting-room-cc8645004b3b.herokuapp.com/) to view the project on Heroku.
 

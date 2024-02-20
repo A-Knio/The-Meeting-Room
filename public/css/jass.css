@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    
 }
 .header{
     width: 100%;
@@ -12,12 +13,25 @@
     padding-right: 8%;
     position: relative;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: #7459b8;
+  padding: 50px 0;
+}
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 100vh;
+  background: #7459b8;
+  padding: 50px 0;
+  width: 100%;
+
 }
 
 .top-nav{
@@ -983,3 +997,4 @@ p {
     align-content: center;
   }
 }
+
